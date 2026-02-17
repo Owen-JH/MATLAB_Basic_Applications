@@ -1,0 +1,19 @@
+fs=44100;
+t=linspace(0,1/5,fs/5);
+mod=sin(pi*t/t(end));
+do=mod.*sin(2*pi*262*t);
+re=mod.*sin(2*pi*262*2^(2/12)*t);
+mi=mod.*sin(2*pi*262*2^(4/12)*t);
+fa=mod.*sin(2*pi*262*2^(5/12)*t);
+so=mod.*sin(2*pi*262*2^(7/12)*t);
+la=mod.*sin(2*pi*262*2^(9/12)*t);
+ti=mod.*sin(2*pi*262*2^(11/12)*t);
+Do=mod.*sin(4*pi*262*t);
+Re=mod.*sin(4*pi*262*2^(2/12)*t);
+Mi=mod.*sin(4*pi*262*2^(4/12)*t);
+Fa=mod.*sin(4*pi*262*2^(5/12)*t);
+So=mod.*sin(4*pi*262*2^(7/12)*t);
+La=mod.*sin(4*pi*262*2^(9/12)*t);
+Ti=mod.*sin(4*pi*262*2^(11/12)*t);
+righthand=[la ti Do Do Do Do Do ti Mi Mi Mi La La La La So Fa So Do Do Do Fa Fa Fa Fa Fa Mi ti Mi Re Re Do ti Do Do ti la ti Do Do Do Do Do ti Mi Mi Mi La La La La So Fa So Do Do Do Fa Fa Fa Fa Fa Mi Re Do ti ti Do la la];
+sound(righthand,fs)
