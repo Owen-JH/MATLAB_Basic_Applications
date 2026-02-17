@@ -1,7 +1,7 @@
 function [ ch ] = decode( dd )
-%×ÖÄ¸morseÃÜÂë½âÂë
-%ÊäÈë±äÁ¿£º×Ö·ûÊý×éddÎªÄ³¸ö×ÖÄ¸morseÂë
-%Êä³ö±äÁ¿£ºchÎª½âÂëºóµÄ×ÖÄ¸
+%å­—æ¯morseå¯†ç è§£ç 
+%è¾“å…¥å˜é‡ï¼šå­—ç¬¦æ•°ç»„ddä¸ºæŸä¸ªå­—æ¯morseç 
+%è¾“å‡ºå˜é‡ï¼šchä¸ºè§£ç åŽçš„å­—æ¯
 M=morse_tree;
 n=length(dd);
 for k=1:n
